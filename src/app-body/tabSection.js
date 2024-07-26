@@ -1,3 +1,5 @@
+import resumePic from '../images/karla-zamora-resume.jpg';
+
 import './tabSection.css'
 import { useEffect, useRef, useState } from 'react';
 import Tab from 'react-bootstrap/Tab';
@@ -17,7 +19,6 @@ function TabSection() {
         <div>
           <div id="start-of-tabs-reference" ref = {tabsRef}></div>
             <Tabs
-            // defaultActiveKey="background"
             id="main-tabs"
             className="mb-3 sticky-tabs"
             justify
@@ -48,7 +49,8 @@ function TabSection() {
               <p>Nice to meet you!</p>
             </Tab>
             <Tab eventKey="resume" title="Resume">
-              Tab content for Profile
+              <p>Current resume:</p>
+              <img src={resumePic} alt="karla zamora resume" className='Resume-pic'/>
             </Tab>
             <Tab eventKey="projects" title="Projects">
               Tab content for Loooonger Tab
