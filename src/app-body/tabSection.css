@@ -29,7 +29,31 @@
   color: white; /* Hover text color */
 }
 
+.Tab {
+  background-color: #f5f5f5;
+}
+
+.Tab-Free-zone {
+  background-color: #2b2638;
+}
+
 .Resume-pic {
   width: 60%;
+}
+
+/* Timeline CSS */
+
+#timelineLine .timeline-item:before {
+  background-color: #5C5470;
+}
+
+#timelineLine:after {
+  background-color: #B9B4C7;
+}
+
+/* Project Carousel CSS */
+
+#project-crl {
+  color: black !important;
 }
 
