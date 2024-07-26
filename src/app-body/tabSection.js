@@ -100,7 +100,12 @@ function TabSection() {
                           <div class="card border-0">
                             <div class="card-body p-2">
                               <h5 class="card-subtitle text-secondary m-2">Summer 2024</h5>
-                              <p class="card-text mb-2">Graduate as a Computer Engineer. Get my first programming job at Outlier.AI, obtain certifications from Codepath's technical courses, and become a SWE fellow at Headstarter AI.</p>
+                              <p class="card-text mb-2">
+                                <li><p className='Main-point m-0'>Graduate as a Computer Engineer</p><li>University of Texas Rio Grande Valley</li><li>Magna Cum Laude</li><li>GPA: 3.83</li></li>
+                                <br></br><li><p className='Main-point m-0'>Get my first programming job</p><li>AI Training Coder at Outlier.AI</li></li>
+                                <br></br><li><p className='Main-point m-0'>Obtain Certifications</p><li>Codepath's Technical Interview Prep</li></li>
+                                <br></br><li><p className='Main-point m-0'>Become a Software Engineering Fellow</p><li>Headstarter AI</li></li>
+                              </p>
                             </div>
                           </div>
                         </div>

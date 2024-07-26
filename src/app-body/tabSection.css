@@ -41,6 +41,10 @@
   width: 60%;
 }
 
+.Main-point {
+  font-weight: 600;
+}
+
 /* Timeline CSS */
 
 #timelineLine .timeline-item:before {
