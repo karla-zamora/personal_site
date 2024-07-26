@@ -168,6 +168,7 @@ function TabSection() {
                 <img src={ereaserBotBase} alt='karla zamora eraser bot pcb' className='project-image' />
               </Carousel.Item>              
             </Carousel>
+            <h3 className="p-2 mt-3" style={{color:'#5C5470'}}>More coming soon!</h3>
           </Container>
         </Tab>
 
