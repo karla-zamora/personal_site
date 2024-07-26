@@ -1,4 +1,8 @@
 import resumePic from '../images/karla-zamora-resume.jpg';
+//carousel image size: 848 x 480
+import eraserBotVid from '../images/eraser-bot/eraser-bot-video.gif';
+import eraserBotPCB from '../images/eraser-bot/eraser-bot-pcb-real.png';
+import ereaserBotBase from '../images/eraser-bot/eraser-bot-base.png';
 
 import './tabSection.css'
 import { useEffect, useRef, useState } from 'react';
@@ -6,6 +10,7 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import Carousel from 'react-bootstrap/Carousel';
 import ContactForm from './ContactForm';
+import Container from 'react-bootstrap/Container'
 
 
 function TabSection() {
@@ -18,9 +23,6 @@ function TabSection() {
     }
   }, [activeKey]);
 
-  // projects array for easier storage
-  const projectPic = 'https://colourlex.com/wp-content/uploads/2021/02/vine-black-painted-swatch.jpg';
-  const projectAlt = 'tempAlt';
 
   return (
     <div>
@@ -137,27 +139,35 @@ function TabSection() {
 
 
         </Tab>
+
         <Tab eventKey="projects" title="Projects" className="Tab">
-          <Carousel id="project-crl">
-            <Carousel.Item>
-              <img src={projectPic} alt={projectAlt}/>
-              <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img src={projectPic} alt={projectAlt} />
-              <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-          </Carousel>
+          <Container>
+            <h2 className='p-2'>Autonomous Whiteboard Eraser Bot</h2>
+            <Carousel id="EraserBot" interval={16000}>
+              <Carousel.Item>
+                <div>
+                  <p>C++, Dart (Flutter)</p>
+                </div>
+                <img src={eraserBotVid} alt='karla zamora eraser bot gif' className='project-image' />
+              </Carousel.Item>
+              <Carousel.Item>
+                <div>
+                  <p>Custom PCB:</p>
+                </div>
+                <img src={eraserBotPCB} alt='karla zamora eraser bot pcb' className='project-image' />
+              </Carousel.Item>
+              <Carousel.Item>
+                <div>
+                  <p>3D printed base:</p>
+                </div>
+                <img src={ereaserBotBase} alt='karla zamora eraser bot pcb' className='project-image' />
+              </Carousel.Item>              
+            </Carousel>
+          </Container>
         </Tab>
 
         <Tab eventKey="contact" title="Contact" className="Tab">
-          <ContactForm/>        
+          <ContactForm />
         </Tab>
       </Tabs>
       <div className='Tab-Free-zone'>

@@ -57,3 +57,16 @@
   color: black !important;
 }
 
+.carousel-control-next-icon{
+  /* background-image : url(//url of icon); */
+  background-color: #5C5470;
+}
+.carousel-control-prev-icon{
+  /* background-image : url(//url of icon); */
+  background-color: #5C5470;
+}
+
+.project-image {
+  width: 80%;
+  border-radius: 10px;
+}
