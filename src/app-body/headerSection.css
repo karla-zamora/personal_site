@@ -1,0 +1,9 @@
+.SocialIcon {
+    width:42px;
+    height:42px;
+    opacity: 70%;
+}
+
+.SocialIcon:hover {
+    opacity: 100%;
+}

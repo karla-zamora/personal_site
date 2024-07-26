@@ -1,0 +1,31 @@
+.sticky-tabs {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: #352F44; /* color here for whole tab area instead of singular tab */
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    opacity: 80%;
+  }
+
+.sticky-tabs:hover {
+  background-color: #2b2638;
+  opacity: 90%;
+}
+
+/* bootstrap uses .nav-link for tabs in the background */
+
+.sticky-tabs .nav-link {
+  color: #FAF0E6; 
+}
+
+#main-tabs .nav-link.active{
+  background-color: #B9B4C7; 
+}
+
+.sticky-tabs .nav-link:hover {
+  background-color: #5C5470; /* Hover background color */
+  color: white; /* Hover text color */
+}
+
