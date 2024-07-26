@@ -1,6 +1,8 @@
 .App {
   text-align: center;
   background-color: #B9B4C7;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
 }
 
 .App-logo {

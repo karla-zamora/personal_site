@@ -13,7 +13,8 @@ function HeaderSection() {
             <div className="p-4">
                 <img src={profilepic} className="App-logo" alt="karla zamora" />
             </div>
-            <p>Karla I. Zamora<br></br>Aspiring Software Engineer</p>
+            <h3 className="mb-0">Karla I. Zamora</h3>
+            <p className="sm">Aspiring Software Engineer</p>
 
             <div>
                 <a
