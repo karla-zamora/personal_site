@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import Carousel from 'react-bootstrap/Carousel';
+import ContactForm from './ContactForm';
 
 
 function TabSection() {
@@ -156,27 +157,7 @@ function TabSection() {
         </Tab>
 
         <Tab eventKey="contact" title="Contact" className="Tab">
-          <p>Nice to meet you!</p>
-          <p>Nice to meet you!</p>
-          <p>Nice to meet you!</p>
-          <p>Nice to meet you!</p>
-          <p>Nice to meet you!</p>
-          <p>Nice to meet you!</p>
-          <p>Nice to meet you!</p>
-          <p>Nice to meet you!</p>
-          <p>Nice to meet you!</p>
-          <p>Nice to meet you!</p>
-          <p>Nice to meet you!</p>
-          <p>Nice to meet you!</p>
-          <p>Nice to meet you!</p>
-          <p>Nice to meet you!</p>
-          <p>Nice to meet you!</p>
-          <p>Nice to meet you!</p>
-          <p>Nice to meet you!</p>
-          <p>Nice to meet you!</p>
-          <p>Nice to meet you!</p>
-          <p>Nice to meet you!</p>
-          <p>Nice to meet you!</p>
+          <ContactForm/>        
         </Tab>
       </Tabs>
       <div className='Tab-Free-zone'>
