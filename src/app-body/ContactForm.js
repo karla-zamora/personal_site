@@ -8,7 +8,7 @@ function ContactForm() {
                 <h1 class="title">Nice to meet you!</h1>
                 <hr></hr>
                 <p>Submitting will take you to another page.</p>
-                <form target="_blank" action="https://formsubmit.co/7c418c438518098206adfdd37bf96aae" method="POST">
+                <form target="_blank" action="https://formsubmit.co/karla.zamora186@gmail.com" method="POST">
                     <div class="form-group">
                         <div class="form-row">
                             <div class="col">
