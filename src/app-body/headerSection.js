@@ -4,12 +4,8 @@ import profilepic from "../images/karlazamora-black.png";
 import linkedinLogo from "../images/linkedin-logo.png"
 import githubLogo from "../images/github-logo.png"
 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+
 import Stack from 'react-bootstrap/Stack';
-import Button from 'react-bootstrap/Button';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
 function HeaderSection() {
     return (

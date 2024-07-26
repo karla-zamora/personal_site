@@ -19,7 +19,7 @@ function App() {
           <TabSection />
         </div>
 
-        <div>
+        <div className='Free-zone'>
           <br></br>
           <br></br>
         </div>

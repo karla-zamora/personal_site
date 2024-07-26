@@ -5,7 +5,7 @@ import Tabs from 'react-bootstrap/Tabs';
 
 function TabSection() {
   // return to top of tab when switching tabs
-  const [activeKey, setActiveKey] = useState('background');
+  const [activeKey, setActiveKey] = useState(null);
   const tabsRef = useRef(null);
   useEffect(() => {
     if (tabsRef.current) {
@@ -17,7 +17,7 @@ function TabSection() {
         <div>
           <div id="start-of-tabs-reference" ref = {tabsRef}></div>
             <Tabs
-            defaultActiveKey="background"
+            // defaultActiveKey="background"
             id="main-tabs"
             className="mb-3 sticky-tabs"
             justify
