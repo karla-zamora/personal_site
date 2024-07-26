@@ -15,73 +15,76 @@ function TabSection() {
     }
   }, [activeKey]);
 
-    return (      
-        <div>
-          <div id="start-of-tabs-reference" ref = {tabsRef}></div>
-            <Tabs
-            id="main-tabs"
-            className="mb-3 sticky-tabs"
-            justify
-            activeKey={activeKey}
-            onSelect={(k) => setActiveKey(k)}
-          >
-            <Tab eventKey="background" title="Background" className="Tab">
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-            </Tab>
-            <Tab eventKey="resume" title="Resume">
-              <p>Current resume:</p>
-              <img src={resumePic} alt="karla zamora resume" className='Resume-pic'/>
-            </Tab>
-            <Tab eventKey="projects" title="Projects">
-              Tab content for Loooonger Tab
-            </Tab>
-            <Tab eventKey="contact" title="Contact">
-            <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-              <p>Nice to meet you!</p>
-            </Tab>
-          </Tabs>
-        </div>
-    );
-  }
-  
-  export default TabSection;
-  
+  return (
+    <div>
+      <div id="start-of-tabs-reference" ref={tabsRef}></div>
+      <Tabs
+        id="main-tabs"
+        className="mb-3 sticky-tabs"
+        justify
+        activeKey={activeKey}
+        onSelect={(k) => setActiveKey(k)}
+      >
+        <Tab eventKey="background" title="Background" className="Tab">
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+        </Tab>
+        <Tab eventKey="resume" title="Resume">
+          <p>Current resume:</p>
+          <a href={resumePic} target="_blank"
+            rel="noopener noreferrer">
+            <img src={resumePic} alt="karla zamora resume" className='Resume-pic' />
+          </a>
+
+        </Tab>
+        <Tab eventKey="projects" title="Projects">
+          Tab content for Loooonger Tab
+        </Tab>
+        <Tab eventKey="contact" title="Contact">
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+          <p>Nice to meet you!</p>
+        </Tab>
+      </Tabs>
+    </div>
+  );
+}
+
+export default TabSection;
