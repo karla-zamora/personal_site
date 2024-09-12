@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css"
-import './headerSection.css'
+import './HeaderSection.css'
 import profilepic from "../images/karlazamora-black.png";
 import linkedinLogo from "../images/linkedin-logo.png"
 import githubLogo from "../images/github-logo.png"
