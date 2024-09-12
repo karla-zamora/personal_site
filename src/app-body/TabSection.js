@@ -1,4 +1,4 @@
-import resumePic from '../images/karla-zamora-resume.jpg';
+//import resumePic from '../images/karla-zamora-resume.jpg';
 //carousel image size: 848 x 480
 import eraserBotVid from '../images/eraser-bot/eraser-bot-video.gif';
 import eraserBotPCB from '../images/eraser-bot/eraser-bot-pcb-real.png';
