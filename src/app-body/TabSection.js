@@ -140,7 +140,7 @@ function TabSection() {
           <p>Current resume:</p>
           <p style={{fontSize: "10px"}}>This page is still in progress, so resume may not display correctly!</p>
           <div>
-            <iframe width="100%" height="500px" alt="karla zamora resume" className="Resume-pic p-2 w-screen h-screen" src={resumeFile} />
+            <iframe title="resume" width="100%" height="500px" alt="karla zamora resume" className="Resume-pic p-2 w-screen h-screen" src={resumeFile} />
           </div>
         </Tab>
 
@@ -158,7 +158,7 @@ function TabSection() {
                 width="100%"
                 height="480"
                 src="https://www.youtube.com/embed/JHTNLbtLkgE?si=4nWJkJa1cxusrNk9"
-                title="YouTube video"
+                title="Projourney"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen>
               </iframe>
@@ -179,7 +179,7 @@ function TabSection() {
                 width="100%"
                 height="480"
                 src="https://www.youtube.com/embed/1uHQf6Az5bU?si=ePAwadKahHun9guH"
-                title="YouTube video"
+                title="Annotator"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen>
               </iframe>
