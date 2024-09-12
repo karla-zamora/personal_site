@@ -1,10 +1,10 @@
-import resumePic from '../images/karla-zamora-resume.jpg';
+//import resumePic from '../images/karla-zamora-resume.jpg';
 //carousel image size: 848 x 480
 import eraserBotVid from '../images/eraser-bot/eraser-bot-video.gif';
 import eraserBotPCB from '../images/eraser-bot/eraser-bot-pcb-real.png';
 import ereaserBotBase from '../images/eraser-bot/eraser-bot-base.png';
 
-import './tabSection.css'
+import './TabSection.css'
 import { useEffect, useRef, useState } from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
@@ -23,6 +23,9 @@ function TabSection() {
     }
   }, [activeKey]);
 
+  // Resume file link: 
+  const resumeFile = "https://karla-zamora-bucket.s3.us-east-2.amazonaws.com/Karla+Zamora+Resume.pdf"
+
 
   return (
     <div>
@@ -35,7 +38,7 @@ function TabSection() {
         onSelect={(k) => setActiveKey(k)}
       >
         <Tab eventKey="background" title="Background" className="Tab">
-
+          {/* Background section */}
           <section class="bsb-timeline-1 py-5 py-xl-8">
             <div class="container">
               <div class="row justify-content-center">
@@ -101,7 +104,7 @@ function TabSection() {
                             <div class="card-body p-2">
                               <h5 class="card-subtitle text-secondary m-2">Summer 2024</h5>
                               <p class="card-text mb-2">
-                                <li><p className='Main-point m-0'>Graduate as a Computer Engineer</p><li>University of Texas Rio Grande Valley</li><li>Magna Cum Laude</li><li>GPA: 3.83</li></li>
+                                <li><p className='Main-point m-0'>Graduate as a Computer Engineer</p><li>University of Texas Rio Grande Valley</li><li>Magna Cum Laude</li><li>GPA: 3.87</li></li>
                                 <br></br><li><p className='Main-point m-0'>Get my first programming job</p><li>AI Training Coder at Outlier.AI</li></li>
                                 <br></br><li><p className='Main-point m-0'>Obtain Certifications</p><li>Codepath's Technical Interview Prep</li></li>
                                 <br></br><li><p className='Main-point m-0'>Become a Software Engineering Fellow</p><li>Headstarter AI</li></li>
@@ -135,17 +138,57 @@ function TabSection() {
 
         <Tab eventKey="resume" title="Resume" className="Tab">
           <p>Current resume:</p>
+          <p style={{fontSize: "10px"}}>This page is still in progress, so resume may not display correctly!</p>
           <div>
-            <a href={resumePic} target="_blank"
-              rel="noopener noreferrer" align='right'>
-              <img src={resumePic} alt="karla zamora resume" className='Resume-pic p-2' />
-            </a>
+            <iframe title="resume" width="100%" height="500px" alt="karla zamora resume" className="Resume-pic p-2 w-screen h-screen" src={resumeFile} />
           </div>
-
-
         </Tab>
 
         <Tab eventKey="projects" title="Projects" className="Tab">
+          <br></br>
+          {/* Projourney */}
+          <Container>
+            <h2 className='p-2'>{"ProJourney - DSA learning platform (in progress)"}</h2>
+            <div>
+              <p>Next.js, React, Javascript, Postgres, Tailwind CSS</p>
+            </div>
+            <div style={{ width: '80%', margin: '0 auto', maxWidth: '848px' }}>
+              <iframe
+                className="embed-responsive-item"
+                width="100%"
+                height="480"
+                src="https://www.youtube.com/embed/JHTNLbtLkgE?si=4nWJkJa1cxusrNk9"
+                title="Projourney"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen>
+              </iframe>
+            </div>
+          </Container>
+          <br></br>
+          <br></br>
+
+          {/* Annotator */}
+          <Container>
+            <h2 className='p-2'>AI Transcript Annotator - Hackathon Winner &#127942;</h2>
+            <div>
+              <p>Next.js, React, Typescript, DynamoDB, Gemini AI, shadcn/Tailwind CSS</p>
+            </div>
+            <div style={{ width: '80%', margin: '0 auto', maxWidth: '848px' }}>
+              <iframe
+                className="embed-responsive-item"
+                width="100%"
+                height="480"
+                src="https://www.youtube.com/embed/1uHQf6Az5bU?si=ePAwadKahHun9guH"
+                title="Annotator"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen>
+              </iframe>
+            </div>
+          </Container>
+          <br></br>
+          <br></br>
+
+          {/* Eraser Bot */}
           <Container>
             <h2 className='p-2'>Autonomous Whiteboard Eraser Bot</h2>
             <Carousel id="EraserBot" interval={16000}>
@@ -153,23 +196,25 @@ function TabSection() {
                 <div>
                   <p>C++, Dart (Flutter)</p>
                 </div>
-                <img src={eraserBotVid} alt='karla zamora eraser bot gif' className='project-image' />
+                <img src={eraserBotVid} alt='karla zamora eraser bot gif' className='project-image' style={{ width: '80%', height: 'auto', maxWidth: '848px' }} />
               </Carousel.Item>
               <Carousel.Item>
                 <div>
                   <p>Custom PCB:</p>
                 </div>
-                <img src={eraserBotPCB} alt='karla zamora eraser bot pcb' className='project-image' />
+                <img src={eraserBotPCB} alt='karla zamora eraser bot pcb' className='project-image' style={{ width: '80%', height: 'auto', maxWidth: '848px' }} />
               </Carousel.Item>
               <Carousel.Item>
                 <div>
                   <p>3D printed base:</p>
                 </div>
-                <img src={ereaserBotBase} alt='karla zamora eraser bot pcb' className='project-image' />
-              </Carousel.Item>              
+                <img src={ereaserBotBase} alt='karla zamora eraser bot pcb' className='project-image' style={{ width: '80%', height: 'auto', maxWidth: '848px' }} />
+              </Carousel.Item>
             </Carousel>
-            <h3 className="p-2 mt-3" style={{color:'#5C5470'}}>More coming soon!</h3>
+            <h3 className="p-2 mt-3" style={{ color: '#5C5470' }}>More coming soon!</h3>
           </Container>
+
+
         </Tab>
 
         <Tab eventKey="contact" title="Contact" className="Tab">

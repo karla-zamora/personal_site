@@ -2,6 +2,7 @@ import './ContactForm.css';
 import Container from 'react-bootstrap/Container'
 
 function ContactForm() {
+    // Current contact form uses formsubmit.co to simplify development. However, it is slow and unreliable so I will be considering other options.
     return (
         <div className="form-container">
             <Container id="contactInfo" className='m-3'>
