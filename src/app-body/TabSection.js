@@ -146,6 +146,27 @@ function TabSection() {
 
         <Tab eventKey="projects" title="Projects" className="Tab">
           <br></br>
+
+                    {/* Annotator */}
+                    <Container>
+            <h2 className='p-2'>AI Transcript Annotator - Hackathon Winner &#127942;</h2>
+            <div>
+              <p>Next.js, React, Typescript, DynamoDB, Gemini AI, shadcn/Tailwind CSS</p>
+            </div>
+            <div style={{ width: '80%', margin: '0 auto', maxWidth: '848px' }}>
+              <iframe
+                className="embed-responsive-item"
+                src="https://www.youtube.com/embed/1uHQf6Az5bU?si=ePAwadKahHun9guH"
+                title="Annotator"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen>
+              </iframe>
+            </div>
+          </Container>
+          <br></br>
+          <br></br>
+
+          
           {/* Projourney */}
           <Container>
             <h2 className='p-2'>{"ProJourney - DSA learning platform (in progress)"}</h2>
@@ -155,31 +176,8 @@ function TabSection() {
             <div style={{ width: '80%', margin: '0 auto', maxWidth: '848px' }}>
               <iframe
                 className="embed-responsive-item"
-                width="100%"
-                height="480"
                 src="https://www.youtube.com/embed/JHTNLbtLkgE?si=4nWJkJa1cxusrNk9"
                 title="Projourney"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen>
-              </iframe>
-            </div>
-          </Container>
-          <br></br>
-          <br></br>
-
-          {/* Annotator */}
-          <Container>
-            <h2 className='p-2'>AI Transcript Annotator - Hackathon Winner &#127942;</h2>
-            <div>
-              <p>Next.js, React, Typescript, DynamoDB, Gemini AI, shadcn/Tailwind CSS</p>
-            </div>
-            <div style={{ width: '80%', margin: '0 auto', maxWidth: '848px' }}>
-              <iframe
-                className="embed-responsive-item"
-                width="100%"
-                height="480"
-                src="https://www.youtube.com/embed/1uHQf6Az5bU?si=ePAwadKahHun9guH"
-                title="Annotator"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen>
               </iframe>
