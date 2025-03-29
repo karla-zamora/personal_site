@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import './HeaderSection.css'
-import profilepic from "../images/karlazamora-black.png";
+import profilepic from "../images/gold ring.png";
 import linkedinLogo from "../images/linkedin-logo.png"
 import githubLogo from "../images/github-logo.png"
 
