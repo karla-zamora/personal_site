@@ -5,9 +5,7 @@ import './TabSection.css'
 import { useEffect, useRef, useState } from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import Carousel from 'react-bootstrap/Carousel';
 import ContactForm from './ContactForm';
-import Container from 'react-bootstrap/Container'
 
 // Sections
 import Background from './Sections/Background';
@@ -55,7 +53,7 @@ function TabSection() {
           <ContactForm />
         </Tab>
       </Tabs>
-      
+
       <div className='Tab-Free-zone'>
         <hr></hr>
       </div>

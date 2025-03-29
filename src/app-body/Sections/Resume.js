@@ -1,8 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 export default function Resume({ resumeFile }) {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
-  console.log(isMobile);
+  const [isMobile] = useState(window.innerWidth < 992);
 
   return (
     <div>

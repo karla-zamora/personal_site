@@ -7,7 +7,6 @@ import eraserBotPCB from '../../images/eraser-bot/eraser-bot-pcb-real.png';
 import ereaserBotBase from '../../images/eraser-bot/eraser-bot-base.png';
 
 export default function Projects() {
-  const isMobile = window.innerWidth < 992;
 
   return (
     <div>
