@@ -16,7 +16,7 @@ export default function Resume({ resumeFile }) {
               border: "none",
             }}
             alt="karla zamora resume" 
-            className="Resume-pic p-2 w-screen h-screen" src={resumeFile} />
+            className="Resume-pic p-2 w-screen h-screen" src={resumeFile ? `${resumeFile}?#zoom=100&scrollbar=1&toolbar=1&navpanes=0` : ""} />
         ) : (
           <iframe
             title="resume"
