@@ -7,7 +7,6 @@ export default function Resume({ resumeFile }) {
   return (
     <div>
       <p>Current resume:</p>
-      <p style={{ fontSize: "10px" }}>This page is still in progress, so resume may not display correctly!</p>
       <div>
         {!isMobile ? (
           <iframe 

@@ -76,12 +76,27 @@ const Background = () => {
                 </div>
               </li>
 
+              <li class="timeline-item">
+                <div class="timeline-body">
+                  <div class="timeline-content">
+                    <div class="card border-0">
+                      <div class="card-body p-2">
+                        <h5 class="card-subtitle text-secondary m-2">Fall 2024 - Present</h5>
+                        <p class="card-text mb-2">
+                          <li><p className='Main-point m-0'>Work for a startup!</p><li>MVSSIVE</li></li>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
               <li id="timeline" class="timeline-item">
                 <div class="timeline-body">
                   <div class="timeline-content">
                     <div class="card border-0">
                       <div class="card-body p-2">
-                        <h5 class="card-subtitle text-secondary m-2">Fall 2024</h5>
+                        <h5 class="card-subtitle text-secondary m-2">2025</h5>
                         <h2 class="card-title mb-3">Next Milestone</h2>
                         <p class="card-text mb-2">Land a Software Engineering role and become an AI Engineer!</p>
                       </div>

@@ -14,7 +14,7 @@ function HeaderSection() {
                 <img src={profilepic} className="App-logo" alt="karla zamora" />
             </div>
             <h3 className="mb-0">Karla I. Zamora</h3>
-            <p className="sm">Aspiring Software Engineer</p>
+            <p className="sm" style={{fontSize: "1rem"}}>Frontend Developer - Aspiring Software Engineer</p>
 
             <div>
                 <a
