@@ -96,9 +96,9 @@ const Background = () => {
                   <div class="timeline-content">
                     <div class="card border-0">
                       <div class="card-body p-2">
-                        <h5 class="card-subtitle text-secondary m-2">2025</h5>
+                        <h5 class="card-subtitle text-secondary m-2">2026</h5>
                         <h2 class="card-title mb-3">Next Milestone</h2>
-                        <p class="card-text mb-2">Land a Software Engineering role and become an AI Engineer!</p>
+                        <p class="card-text mb-2">Land a Software Engineering role and become a Software Engineer!</p>
                       </div>
                     </div>
                   </div>

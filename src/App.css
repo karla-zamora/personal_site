@@ -23,7 +23,9 @@
 .App-header {
   background-color: #5C5470;
   background-image: url("./images/cloudbackground.png");
-  min-height: 55vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -14,7 +14,7 @@ import Projects from './Sections/Projects';
 
 function TabSection() {
   // return to top of tab when switching tabs
-  const [activeKey, setActiveKey] = useState(null);
+  const [activeKey, setActiveKey] = useState(Background);
   const tabsRef = useRef(null);
   useEffect(() => {
     if (tabsRef.current) {
